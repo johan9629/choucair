@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">reto automatizacion</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="feature_features_sl_yo_como_administrador.html">Yo Como Administrador</a></span>
+                > <span class="truncate-60"><a
+                    href="yo_como_administrador_crear_un_nuevo_contacto.html">Crear un nuevo contacto </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 12-12-2022 20:45</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Yo Como Administrador</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Nesecito agregar un nuevo contacto
+para crear nuevas ordenes con este contacto
+                                </div>
+                            </div>
+
+                            <div class="requirementNarrative">Background: Se inicia sesion del portal
+                                    <p></p>
+                            </div>
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="tag_nuevocontactoexitoso.html">Nuevo Contacto Exitoso
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Crear un nuevo contacto
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Dado que el administrador quiere crear un nuevo contacto<br>Cuando diligencia los campos del contacto<br><table class='embedded'><thead><th>firstName</th><th>lastName</th><th>email</th></thead><tbody><tr><td>&lt;firstName&gt;</td><td>&lt;lastName&gt;</td><td>&lt;email&gt;</td></tr></tbody></table><br>Entonces se visualizara el contacto con first name "johan123@hotmail.com"</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" Example: {firstName=Johan, lastName=Gonzalez, email=johan123@hotmail.com}" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" Dado Que el asesor quiere iniciar sesion" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" Ordenes abrir pagina task" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" ordenes opens the https://serenity.is/demo/" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" Ordenes abrir pagina task (completed)" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" Dado Que el asesor quiere iniciar sesion (completed)" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" Cuando ingresa sus credenciales de autenticacion
+| usuario | clave |
+| admin | serenity |" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" Ordenes iniciar sesion task" width="1920"/>
+                <img src="1bd6ba82fca3d720d3040f18173cdb416a1c2ec4665050fb0a97eb3fb51d103c.png" title=" ordenes enters 'admin' into Usuario" width="1920"/>
+                <img src="632b2a31b546c098c1dcf5c9bcc11f01863442a0ea74f4653d1a1c8698e0ea48.png" title=" ordenes enters 'admin' into Usuario" width="1920"/>
+                <img src="632b2a31b546c098c1dcf5c9bcc11f01863442a0ea74f4653d1a1c8698e0ea48.png" title=" ordenes enters 'admin' into Usuario (completed)" width="1920"/>
+                <img src="632b2a31b546c098c1dcf5c9bcc11f01863442a0ea74f4653d1a1c8698e0ea48.png" title=" ordenes enters 'serenity' into contrase&Atilde;&plusmn;a" width="1920"/>
+                <img src="ef20d24785a770e6237417c8bd3c612e6b31abbe9709fb312f38eb013c84b736.png" title=" ordenes enters 'serenity' into contrase&Atilde;&plusmn;a" width="1920"/>
+                <img src="ef20d24785a770e6237417c8bd3c612e6b31abbe9709fb312f38eb013c84b736.png" title=" ordenes enters 'serenity' into contrase&Atilde;&plusmn;a (completed)" width="1920"/>
+                <img src="ef20d24785a770e6237417c8bd3c612e6b31abbe9709fb312f38eb013c84b736.png" title=" ordenes clicks on Boton ingresar" width="1920"/>
+                <img src="40fd9b2884c2308d81ff7bc4d6f1921413789d96c4358ecd008c32a70c9c5b58.png" title=" ordenes clicks on Boton ingresar" width="1920"/>
+                <img src="40fd9b2884c2308d81ff7bc4d6f1921413789d96c4358ecd008c32a70c9c5b58.png" title=" ordenes clicks on Boton ingresar (completed)" width="1920"/>
+                <img src="40fd9b2884c2308d81ff7bc4d6f1921413789d96c4358ecd008c32a70c9c5b58.png" title=" Ordenes iniciar sesion task (completed)" width="1920"/>
+                <img src="40fd9b2884c2308d81ff7bc4d6f1921413789d96c4358ecd008c32a70c9c5b58.png" title=" Cuando ingresa sus credenciales de autenticacion
+| usuario | clave |
+| admin | serenity | (completed)" width="1920"/>
+                <img src="40fd9b2884c2308d81ff7bc4d6f1921413789d96c4358ecd008c32a70c9c5b58.png" title=" Dado que el administrador quiere crear un nuevo contacto" width="1920"/>
+                <img src="ced24801ed68eaa71860a63eeec277c0c97b6cf03cbe2bb098c562aeaaef0342.png" title=" Ordenes agregar contacto task" width="1920"/>
+                <img src="c1e2df12521f110903138d65a5b1c42394514c5391d86f6f816c16ee445cadd7.png" title=" ordenes clicks on Icono inicio" width="1920"/>
+                <img src="b4839e08e1671c1c1caae7e524e7cc65c3d4bbee0822793b69636acb409c309b.png" title=" ordenes clicks on Icono inicio" width="1920"/>
+                <img src="b4839e08e1671c1c1caae7e524e7cc65c3d4bbee0822793b69636acb409c309b.png" title=" ordenes clicks on Icono inicio (completed)" width="1920"/>
+                <img src="b4839e08e1671c1c1caae7e524e7cc65c3d4bbee0822793b69636acb409c309b.png" title=" ordenes clicks on Icono organizacion" width="1920"/>
+                <img src="0fb8dedfed8cbbb0344258a598beed4ed1566f3195ab4e4b844cd55c42acf316.png" title=" ordenes clicks on Icono organizacion" width="1920"/>
+                <img src="0fb8dedfed8cbbb0344258a598beed4ed1566f3195ab4e4b844cd55c42acf316.png" title=" ordenes clicks on Icono organizacion (completed)" width="1920"/>
+                <img src="0fb8dedfed8cbbb0344258a598beed4ed1566f3195ab4e4b844cd55c42acf316.png" title=" ordenes clicks on Icono Contactos" width="1920"/>
+                <img src="f1a5c7ce61e6b5e2daa6a89824823ec615737f42978d257dbcb609a2789fe1ce.png" title=" ordenes clicks on Icono Contactos (completed)" width="1920"/>
+                <img src="f1a5c7ce61e6b5e2daa6a89824823ec615737f42978d257dbcb609a2789fe1ce.png" title=" Dado que el administrador quiere crear un nuevo contacto" width="1920"/>
+                <img src="f1a5c7ce61e6b5e2daa6a89824823ec615737f42978d257dbcb609a2789fe1ce.png" title=" Ordenes agregar contacto task (completed)" width="1920"/>
+                <img src="f1a5c7ce61e6b5e2daa6a89824823ec615737f42978d257dbcb609a2789fe1ce.png" title=" Cuando diligencia los campos del contacto
+| firstName | lastName | email |
+| Johan | Gonzalez | johan123@hotmail.com |" width="1920"/>
+                <img src="f1a5c7ce61e6b5e2daa6a89824823ec615737f42978d257dbcb609a2789fe1ce.png" title=" Ordenes agregar conctacto interaction" width="1920"/>
+                <img src="8cf10b666df30b3a759a2e5b5f05473bbbc30a1fc70837492206d9862a672225.png" title=" ordenes clicks on Nuevo contacto" width="1920"/>
+                <img src="fb8026d06c30c816289105bb87762f11cdb08a78b9b8377c1ad66729cfb851e8.png" title=" ordenes clicks on Nuevo contacto" width="1920"/>
+                <img src="fb8026d06c30c816289105bb87762f11cdb08a78b9b8377c1ad66729cfb851e8.png" title=" ordenes clicks on Nuevo contacto (completed)" width="1920"/>
+                <img src="fb8026d06c30c816289105bb87762f11cdb08a78b9b8377c1ad66729cfb851e8.png" title=" ordenes enters 'Johan' into Nombre" width="1920"/>
+                <img src="fe27c5a0ff61e6df019ff3619a3513e65d1fab29bdc7fd16c72dde7348170978.png" title=" ordenes enters 'Johan' into Nombre" width="1920"/>
+                <img src="fe27c5a0ff61e6df019ff3619a3513e65d1fab29bdc7fd16c72dde7348170978.png" title=" ordenes enters 'Johan' into Nombre (completed)" width="1920"/>
+                <img src="fe27c5a0ff61e6df019ff3619a3513e65d1fab29bdc7fd16c72dde7348170978.png" title=" ordenes enters 'Gonzalez' into Apellido" width="1920"/>
+                <img src="31def2ede7a269b021a4d95efb6c208ae7afaebcb47b555e7879fdbaed3cb0ea.png" title=" ordenes enters 'Gonzalez' into Apellido" width="1920"/>
+                <img src="31def2ede7a269b021a4d95efb6c208ae7afaebcb47b555e7879fdbaed3cb0ea.png" title=" ordenes enters 'Gonzalez' into Apellido (completed)" width="1920"/>
+                <img src="31def2ede7a269b021a4d95efb6c208ae7afaebcb47b555e7879fdbaed3cb0ea.png" title=" ordenes enters 'johan123@hotmail.com' into Email" width="1920"/>
+                <img src="a4d73cd150bc23cd4f641c6646cbf5b720beb61010b1f796efa07face3a161da.png" title=" ordenes enters 'johan123@hotmail.com' into Email" width="1920"/>
+                <img src="a4d73cd150bc23cd4f641c6646cbf5b720beb61010b1f796efa07face3a161da.png" title=" ordenes enters 'johan123@hotmail.com' into Email (completed)" width="1920"/>
+                <img src="a4d73cd150bc23cd4f641c6646cbf5b720beb61010b1f796efa07face3a161da.png" title=" ordenes clicks on Boton guardar" width="1920"/>
+                <img src="e3c43ce81374fcfecec11f5897a32163fe3d41f910e982a6252abdaa1dffeb16.png" title=" ordenes clicks on Boton guardar" width="1920"/>
+                <img src="e3c43ce81374fcfecec11f5897a32163fe3d41f910e982a6252abdaa1dffeb16.png" title=" ordenes clicks on Boton guardar (completed)" width="1920"/>
+                <img src="e3c43ce81374fcfecec11f5897a32163fe3d41f910e982a6252abdaa1dffeb16.png" title=" Ordenes agregar conctacto interaction (completed)" width="1920"/>
+                <img src="e3c43ce81374fcfecec11f5897a32163fe3d41f910e982a6252abdaa1dffeb16.png" title=" Cuando diligencia los campos del contacto
+| firstName | lastName | email |
+| Johan | Gonzalez | johan123@hotmail.com | (completed)" width="1920"/>
+                <img src="e3c43ce81374fcfecec11f5897a32163fe3d41f910e982a6252abdaa1dffeb16.png" title=" Entonces se visualizara el contacto con first name &quot;johan123@hotmail.com&quot;" width="1920"/>
+                <img src="8cf10b666df30b3a759a2e5b5f05473bbbc30a1fc70837492206d9862a672225.png" title=" Then agregar contacto question" width="1920"/>
+                <img src="8cf10b666df30b3a759a2e5b5f05473bbbc30a1fc70837492206d9862a672225.png" title=" ordenes clicks on ID" width="1920"/>
+                <img src="f91e59c85ce42fdc9a0073b2ea07324fcfa318985a5253f8735457b378232102.png" title=" ordenes clicks on ID (completed)" width="1920"/>
+                <img src="f91e59c85ce42fdc9a0073b2ea07324fcfa318985a5253f8735457b378232102.png" title=" ordenes clicks on ID" width="1920"/>
+                <img src="84971cbff1aafb6596409ad97131e332ea204f17f5b713dd1acc1eaf5b5e8fb2.png" title=" ordenes clicks on ID" width="1920"/>
+                <img src="84971cbff1aafb6596409ad97131e332ea204f17f5b713dd1acc1eaf5b5e8fb2.png" title=" ordenes clicks on ID (completed)" width="1920"/>
+                <img src="90b320994accdf910746404da544407302535807fb0b762d4baf23a3920185f5.png" title=" Then agregar contacto question (completed)" width="1920"/>
+                <img src="90b320994accdf910746404da544407302535807fb0b762d4baf23a3920185f5.png" title=" Entonces se visualizara el contacto con first name &quot;johan123@hotmail.com&quot; (completed)" width="1920"/>
+                <img src="90b320994accdf910746404da544407302535807fb0b762d4baf23a3920185f5.png" title=" Example: {firstName=Johan, lastName=Gonzalez, email=johan123@hotmail.com} (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.89</span>
+</div>
+</body>
+</html>

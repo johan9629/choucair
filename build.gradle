@@ -1,0 +1,50 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: 'java-library'
+apply plugin: 'org.sonarqube'
+
+group 'com.lineadirecta.certificacion'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.3.6")
+        classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.0")
+        classpath("net.serenity-bdd:serenity-single-page-report:2.3.6")
+    }
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.assertj:assertj-core:3.12.2'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.29'
+    implementation "net.serenity-bdd:serenity-rest-assured:2.0.89"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:2.0.89"
+    implementation 'org.json:json:20190722'
+    testImplementation 'junit:junit:4.13-rc-1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.2'
+    implementation 'org.apache.poi:poi-ooxml:4.1.1'
+    implementation 'org.apache.poi:poi:4.1.1'
+    testImplementation "net.serenity-bdd:serenity-ensure:2.0.89"
+    testImplementation "net.serenity-bdd:serenity-core:2.0.89"
+    testImplementation "net.serenity-bdd:serenity-junit:2.0.89"
+    implementation "net.serenity-bdd:serenity-screenplay:2.0.89"
+    implementation "net.serenity-bdd:serenity-cucumber:1.9.48"
+    implementation group: 'io.appium', name: 'java-client', version: '7.3.0'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+
+}
+test {
+    ignoreFailures = true
+}
+gradle.startParameter.continueOnFailure = true

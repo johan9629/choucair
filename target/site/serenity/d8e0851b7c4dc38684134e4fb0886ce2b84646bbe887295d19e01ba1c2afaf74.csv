@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Yo como asesor","Inicio de sesion exitoso","PENDING","2022-12-11T12:16:53.082-05:00[America/Bogota]","0.0","0.09"
+"Yo como asesor","inicio de sesion fallido","PENDING","2022-12-11T12:16:53.202-05:00[America/Bogota]","0.0","0.01"
+"Yo como asesor","Inicio de sesion exitoso","ERROR","2022-12-11T13:42:27.466-05:00[America/Bogota]","0.0","3.24"
+"Yo como asesor","inicio de sesion fallido","ERROR","2022-12-11T13:42:30.786-05:00[America/Bogota]","0.0","1.42"
